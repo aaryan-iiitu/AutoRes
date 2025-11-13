@@ -1,7 +1,7 @@
-# ResultAutomation
+# AutoRes
 
 ## Introduction
-ResultAutomation is a web-based application designed to automate the process of generating student report cards from an Excel file. This tool simplifies the evaluation process by calculating totals, percentages, and ranks, while also providing visualizations of class performance.
+AutoRes is a web-based application designed to automate the process of generating student report cards from an Excel file. This tool simplifies the evaluation process by calculating totals, percentages, and ranks, while also providing visualizations of class performance.
 
 ## Features
 - Upload an Excel file with student results.
