@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: black;
+}
+
+.container{
+    position: relative;
+}
+
+.content{
+    max-width: 1700px;
+    margin: auto;
+    padding: 4%;
+}
+
+
+#view{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(240, 248, 255, 0.405);
+    box-shadow: 0 1px 3px #aca9a9d8,0 2px 5px #f9f3f3e2!important;
+    padding: 4px 6px;
+    font-size: 20px;
+}
+
+.back{
+    z-index: 100;
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.3);
+    min-height: 100vh;
+}
+
+.bac-img{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.site-usage{
+    padding: 4%;
+    margin-top: 3%;
+    border-radius: 20px;
+    font-size: larger;
+    color: rgb(207, 255, 198);
+    transition-duration: 0.4s;
+    box-shadow: 0 2px 5px #aca9a9d8,0 5px 8px #f9f3f3e2!important;
+    line-height: 1.4;
+    font-family:sans-serif
+}
+
+.site-usage:hover{
+    background-color: rgba(24, 24, 24, 0.637);
+}
+
+.site-usage h1{
+    margin-bottom: 16px;
+}
+
+.dashboard{
+    background-color: #0f2cbe1d;
+    opacity: 0.8;
+    width: 50%;
+    padding: 1% 2.5% 2.5% 2.5%;
+    border-radius: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    min-width: fit-content;
+    box-shadow: 0 2px 5px #aca9a9d8,0 5px 8px #f9f3f3e2!important;
+    transition-duration: 0.4s;
+}
+
+.dashboard:hover{
+    background-color: #0f26be5c;
+}
+
+
+.dashboard h2{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.dashboard input{
+    width: 90%;
+    padding: 9px 13px;
+    border-radius: 8px;
+    margin: 2% 0px;
+}
+
+.file{
+    padding: 0px;
+    margin-left: 0px;
+    background-color: aliceblue;
+    border: 1px solid brown;
+    border-radius: 4px;
+}
+
+.dashboard span{
+    color: rgb(0, 13, 255);
+}
+
+.existing-info{
+    background-color: rgb(242 238 255 / 64%);    ;;
+    border-radius: 8px;
+    padding: 1% 4% 4% 4%;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.changes{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.659);;
+    padding: 2%;
+    margin: 3% 0%;
+    border-radius: 8px;
+}
+
+button{
+    padding: 9px 13px;
+    background-color: rgb(209, 159, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.schoolLogo{
+    display: flex;
+}
+
+.principalSign{
+    display: flex;
+}
+
+.upload-here{
+    background-color: rgba(128, 175, 171, 0.186);
+    border-radius: 20px;
+    width: fit-content;
+    min-width: 300px;
+    padding: 4%;
+    box-shadow: 0 2px 5px #aca9a9d8,0 5px 8px #f9f3f3e2!important;
+    transition-duration: 0.4s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.upload-here:hover{
+    background-color: rgba(8, 55, 51, 0.486);
+}
+
+.upload-here h2{
+    color: rgb(141, 204, 255);
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.upload-here input{
+    background-color: rgba(255, 222, 174, 0.566);
+    padding: 9px 13px;
+    border-radius: 8px;
+    margin-bottom: 4%;
+}
+
+.upload-here button{
+    height: fit-content;
+    padding: 10px 13px;
+    margin-left: 2%;
+}
+
+.status{
+    background-color: rgba(240, 255, 255, 0.501);
+    border: 2px solid greenyellow;
+    padding: 9px 13px;
+    border-radius: 8px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.main-doc{
+    background-color: rgba(240, 255, 255, 0.301);
+    border: 2px solid red;
+    padding: 2%;
+    border-radius: 14px;
+}
+
+.report-card{
+    background-color: rgba(182, 4, 96, 0.486);
+    margin-left: 0;
+}
+
+@media (min-width: 500px) {
+    .content{
+        background-color: rgba(0, 0, 0, 0.501);
+    }
+    .flex{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 4%;
+    }
+    .bac-img{
+        height: 100vh;
+    }
+    .dashboard{
+        width: 93%;
+        background-color: #0f26be5c;
+    }
+    .dashboard .existing-info{
+        font-size: larger;
+    }
+    .dashboard .changes{
+        font-size: larger;
+    }
+    .upload-here{
+        width: 90%;
+        margin: 4% 0px;
+        background-color: rgba(8, 55, 51, 0.486);
+    }
+    .upload-here input{
+        width: 90%;
+        font-size: large;
+    }
+    .upload-here button
+    {
+        font-size: large;
+    }
+}
